@@ -14,8 +14,8 @@ print("{:e}".format(23.123))
 
 #Error,Abs_error,Rel_error,Percentage_error
 
-x = 0.00012887765
-xstar = 0.00012897766
+x = float(input())
+xstar = float(input())
 error = x - xstar
 print("Error", error)
 print("Abs Error", abs(error))
