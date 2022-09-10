@@ -8,9 +8,7 @@ import numpy as np
 from math import log, ceil
 
 def bisection(f, a, b, tol):
-  # f: function f(x)
-  # a, b: initial guesses for the interval containing the root
-  # tol: tolerance value
+
 
   if (a > b):
     print("a < b is not true. Correct a and b!\n")
@@ -50,11 +48,7 @@ def bisection(f, a, b, tol):
 
 
 def newton(f, df, x0, epsilon, max_iter):
-  # f: function f(x)
-  # df: first derivative of f(x)
-  # x0: initial guess
-  # epsilon: error tolerance
-  # max_iter: maximum number of iterations
+
 
   if abs(f(x0)) < epsilon:
     print("Root found: %.8f" %x0)
@@ -102,10 +96,7 @@ def newton(f, df, x0, epsilon, max_iter):
 
 
 def secant(f, x0, x1, err_bd, max_it):
-  # f: function f(x)
-  # x0, x1: initial guesses
-  # err_bd: error tolerance
-  # max_it: maximum number of iterations
+
 
   fx0 = f(x0)
   fx1 = f(x1)
